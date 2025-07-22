@@ -12,12 +12,24 @@ module Menu
           network_menu_section,
           storage_menu_section,
           automation_menu_section,
+          XaasIO_menu_section,
 
           control_menu_section,
 
           settings_menu_section,
           logout_item,
         ]
+      end
+      def xassio_menu_section
+        Menu::Section.new( :xaa, N_("XaasIO"),'carbon--Cloud',[
+        Menu::Item.new('Xaasio_web', N_('xaasIO web'), 'Xaasio_web',
+                   {
+                     :feature => 'dashboard_view',
+                     :any => true,
+                   },
+                    'https://xaasio.com'
+         )]  
+        )
       end
 
       def compute_menu_section
