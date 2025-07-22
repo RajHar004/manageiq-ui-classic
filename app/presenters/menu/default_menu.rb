@@ -12,7 +12,7 @@ module Menu
           network_menu_section,
           storage_menu_section,
           automation_menu_section,
-          XaasIO_menu_section,
+          xaasio_menu_section,
 
           control_menu_section,
 
