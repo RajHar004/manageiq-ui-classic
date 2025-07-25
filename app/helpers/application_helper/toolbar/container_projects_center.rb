@@ -10,23 +10,18 @@ class ApplicationHelper::Toolbar::ContainerProjectsCenter < ApplicationHelper::T
           :container_project_new,
           'pficon pficon-add-circle-o fa-lg',
           N_('Create New Project'),
-          N_('Create New Project'),
-          :url            => '/container_project/new',
-          :klass          => ApplicationHelper::Button::GenericFeatureButtonWithDisable,
-          :options        => { :feature => 'container_project_new' }
+          N_('Create New Project')
         ),
         button(
           :container_project_delete,
           'pficon pficon-delete fa-lg',
           N_('Delete Selected Container Project'),
           N_('Delete Container Project'),
-          :url_parms      => "main_div",
-          :send_checked   => true,
-          :confirm        => N_("Warning: The selected project will be permanently deleted!"),
-          :enabled        => false,
-          :onwhen         => "1+",
-          :klass          => ApplicationHelper::Button::GenericFeatureButtonWithDisable,
-          :options        => { :feature => 'container_project_delete' }
+          :url_parms    => "main_div",
+          :send_checked => true,
+          :confirm      => N_("Warning: The selected project will be permanently deleted!"),
+          :enabled      => false,
+          :onwhen       => "1+"
         )
       ]
     )
