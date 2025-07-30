@@ -20,7 +20,7 @@ module Menu
           logout_item,
         ]
       end
-      def xassio_menu_section
+      def xaasio_menu_section
         Menu::Section.new( :xaa, N_("XaasIO"),'carbon--Cloud',[
         Menu::Item.new('Xaasio_web', N_('xaasIO web'), 'Xaasio_web',
                    {
